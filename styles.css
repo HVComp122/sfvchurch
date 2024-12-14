@@ -1,0 +1,157 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background color */
+}
+
+header {
+    background-color: #ffffff; /* White background for the header */
+    color: #333333; /* Dark grey text color for contrast */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none; /* No bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000; /* Black color for links */
+    text-decoration: none; /* No underline */
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.full-width-image {
+    max-width: 100%; /* Full width images adjust to container size */
+    height: auto;
+    display: block;
+}
+
+.content-section {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-content, .right-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.building-image {
+    max-width: 100%; /* Responsive building image adjusts to its container */
+    height: auto;
+}
+
+.right-content {
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0056b3; /* Blue background for buttons */
+    color: white; /* White text color for buttons */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004494; /* Darker blue on hover for buttons */
+}
+
+footer {
+    background-color: #333; /* Dark footer background */
+    color: white; /* White text color in footer */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Weekly Services Styles */
+.weekly-services {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.weekly-services h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around; /* Evenly space service blocks */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.service {
+    flex-basis: 30%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* White background for the dropdown */
+    min-width: 160px; /* Adjust width as necessary */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black; /* Black text for contrast */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Text aligned to the left */
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff; /* Background remains white on hover */
+    color: #0056b3; /* Change text color to blue for a subtle highlight */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    background-color: #ffffff;
+}
+
